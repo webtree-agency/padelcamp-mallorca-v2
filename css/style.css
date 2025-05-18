@@ -286,7 +286,7 @@ a.nav-link:hover {
 }
 
 
-/* 4.4 Services Section
+/* 4.4 Camps Section
 /*----------------------------------------------*/
 .service-post img.service-img {
   transition: all 0.5s ease-in-out;
@@ -319,7 +319,7 @@ button.filter-button:hover {
 
 
 /*--------------------------------------------------------------
-5.1 About page 
+5.1 Über uns page 
 --------------------------------------------------------------*/
 
 .breadcrumb-item+.breadcrumb-item::before {
@@ -495,7 +495,7 @@ button.filter-button:hover {
     opacity: 0.8;
   }
 }
-/* Services */
+/* Camps */
 .detail-view {
   display: none;
 }
