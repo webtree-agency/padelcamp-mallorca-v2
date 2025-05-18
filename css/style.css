@@ -8,6 +8,7 @@
   --dark-orange: #0667a6;
   --dark-green: #1b1c3a;
   --transparent-primary-color: #bdec0075;
+  --transparent-secondary-color: #0667a675;
   --black-color: #1A2A36;
   --light-black-color: #4E4C49;
   --dark-color: #9B9B9B;
@@ -398,7 +399,8 @@ button.filter-button:hover {
   margin: 0 auto; 
 }
 .footer-background {
-  background-color: var(--bs-gray-100);
+  border-top: 4px solid var(--dark-green);
+  background-color: transparent;
 }
 
 .orange-dot {

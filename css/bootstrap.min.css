@@ -4404,6 +4404,12 @@ textarea.form-control-lg{
     --bs-alert-border-color:var(--primary-color);
     --bs-alert-link-color:var(--bs-info-text-emphasis)
 }
+.alert-info-blue{
+    --bs-alert-color:var(--dark-green);
+    --bs-alert-bg:var(--transparent-secondary-color);
+    --bs-alert-border-color:var(--dark-orange);
+    --bs-alert-link-color:var(--bs-info-text-emphasis)
+}
 .alert-warning{
     --bs-alert-color:var(--bs-warning-text-emphasis);
     --bs-alert-bg:var(--bs-warning-bg-subtle);
@@ -7787,6 +7793,10 @@ textarea.form-control-lg{
 .bg-dark{
     --bs-bg-opacity:1;
     background-color:#17363D !important
+}
+.bg-dark-blue{
+    --bs-bg-opacity:1;
+    background-color:var(--dark-green) !important
 }
 .bg-black{
     --bs-bg-opacity:1;
