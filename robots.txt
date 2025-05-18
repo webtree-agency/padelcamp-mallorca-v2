@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://kitesurfingdakhla.com/sitemap.xml
+Sitemap: https://padelcamp-mallorca.ch/sitemap.xml
