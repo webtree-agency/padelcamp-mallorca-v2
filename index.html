@@ -44,10 +44,61 @@
             color="var(--primary-color)" 
             ></l-line-wobble>
       </div>
-      <!-- WhatsApp Popup -->
-      <div id="whatsapp-popup">
-         <i class="fab fa-whatsapp" id="whatsapp-icon"></i>
+<!-- WhatsApp Button -->
+<div id="whatsapp-popup">
+  <i class="fab fa-whatsapp" id="whatsapp-icon" data-bs-toggle="modal" data-bs-target="#whatsappModal"></i>
+</div>
+
+<!-- WhatsApp Modal (Bootstrap 5) -->
+<div class="modal fade" id="whatsappModal" tabindex="-1" aria-labelledby="whatsappModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header border-0">
+        <h5 class="modal-title d-flex align-items-center" id="whatsappModalLabel">
+          <i class="fab fa-whatsapp me-2 text-success fs-2"></i>
+          Interessiert am Padel Camp?
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schliessen"></button>
       </div>
+
+      <div class="modal-body">
+        <p class="text-muted text-center mb-4">
+          Tritt der passenden WhatsApp-Gruppe bei und erhalte alle wichtigen Infos!
+        </p>
+
+        <div class="row g-4">
+          <!-- September Camp -->
+          <div class="col-md-6">
+            <div class="border rounded p-3 bg-light h-100">
+              <h6 class="text-success border-bottom pb-2 mb-3">September Camp</h6>
+              <div class="text-center desktop-only mb-3">
+                <img src="images/qr/camp-september.png" alt="September WhatsApp Group QR Code" class="img-fluid border rounded" style="max-width: 250px;">
+              </div>
+              <a href="https://chat.whatsapp.com/DvIKZN9Cio7A11kqZbiDVb" class="btn btn-success w-100">
+                <i class="fab fa-whatsapp me-2"></i>Gruppe beitreten
+              </a>
+            </div>
+          </div>
+
+          <!-- October Camp -->
+          <div class="col-md-6">
+            <div class="border rounded p-3 bg-light h-100">
+              <h6 class="text-success border-bottom pb-2 mb-3">October Camp</h6>
+              <div class="text-center desktop-only mb-3">
+                <img src="images/qr/camp-october.png" alt="October WhatsApp Group QR Code" class="img-fluid border rounded" style="max-width: 250px;">
+              </div>
+              <a href="https://chat.whatsapp.com/FxNoOhAJ3qbBTJLWUsRmMj" class="btn btn-success w-100">
+                <i class="fab fa-whatsapp me-2"></i>Gruppe beitreten
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
       <header id="header">
          <video
             autoplay

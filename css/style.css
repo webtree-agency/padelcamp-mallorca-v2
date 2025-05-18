@@ -593,12 +593,12 @@ body.loaded #preloader {
 
 .button-48:hover,
 .button-48-transparent:hover {
-  background-color: #9bb43a;
+  background-color: var(--dark-orange);
   color: #fff;
 }
 
 .button-48-transparent:hover {
-  border-color: #9bb43a;
+  border-color: var(--dark-orange);
 }
 
 .button-48:before,
@@ -939,3 +939,27 @@ textarea {
            text-align: left;
        }
    }
+
+#whatsapp-popup {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1055;
+  cursor: pointer;
+  background-color: #25D366;
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  padding: 1.2rem;
+  font-size: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#whatsapp-popup:hover {
+  background-color: #128C7E;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+}

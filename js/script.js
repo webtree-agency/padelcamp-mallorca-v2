@@ -52,10 +52,26 @@
     });
 
     // WhatsApp Icon Click Event
-    const whatsappIcon = document.getElementById("whatsapp-icon");
-    if (whatsappIcon) {
-        whatsappIcon.addEventListener("click", () => window.open("https://wa.me/212628283870", "_blank"));
-    }
+document.addEventListener('DOMContentLoaded', function() {
+    const whatsappBtn = document.getElementById("whatsapp-popup");
+    const modal = document.getElementById('whatsapp-modal');
+    const modalClose = modal.querySelector('.modal__close');
+    
+    whatsappBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        modal.classList.add('show-modal');
+    });
+    
+    modalClose.addEventListener('click', function() {
+        modal.classList.remove('show-modal');
+    });
+    
+    window.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.classList.remove('show-modal');
+        }
+    });
+});
 
     // Initialize Swiper
     new Swiper('.testimonial-swiper', {
