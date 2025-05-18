@@ -463,6 +463,13 @@ button.filter-button:hover {
 
 /* Abrunden der Bilder auf mobilen Geräten */
 @media (max-width: 991px) {
+  a.nav-link {
+  color: var(--black-color);
+}
+
+a.nav-link:focus {
+  color: var(--black-color);
+}
   .carousel-item img {
     border-radius: 15px;
   }
