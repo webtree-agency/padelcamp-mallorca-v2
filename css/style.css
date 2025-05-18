@@ -4,10 +4,10 @@
 /** 1. VARIABLES
 --------------------------------------------------------------*/
 :root {
-  --primary-color: #ff6335;
-  --dark-orange: #821e00;
-  --dark-green: #17363d;
-  --transparent-primary-color: #ff643550;
+  --primary-color: #bdec00;
+  --dark-orange: #0667a6;
+  --dark-green: #1b1c3a;
+  --transparent-primary-color: #bdec0075;
   --black-color: #1A2A36;
   --light-black-color: #4E4C49;
   --dark-color: #9B9B9B;
@@ -254,7 +254,7 @@ a.nav-link:hover {
   outline: none;
 }
 #header {
-  background: linear-gradient(to bottom, rgba(253, 140 , 78, 0.65), rgba(255, 99, 53, 0));
+  background: linear-gradient(to bottom, rgba(189, 236, 0, 0.65), rgba(255, 99, 53, 0));
   height: 120px;
 }
 
