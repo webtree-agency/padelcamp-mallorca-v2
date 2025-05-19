@@ -350,7 +350,7 @@ button.filter-button:hover {
 /* Parallax */
 .parallax-section {
   position: relative;
-  background-image: url('../images/gallery/padelcamp-mallorca-bg.webp'); 
+  background-image: url('../images/gallery/padel-parallax-min.webp'); 
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -594,7 +594,7 @@ body.loaded #preloader {
   background-color: transparent;
   border: 1px solid var(--primary-color) !important;
   color: var(--primary-color);
-  font-family: Clarkson, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 500;
   text-rendering: geometricprecision;
