@@ -73,6 +73,7 @@ body {
   letter-spacing: 0.32px;
   color: var(--dark-color);
   margin: 0;
+  overflow-x: hidden !important;
 }
 
 p {
@@ -99,6 +100,14 @@ a:hover {
 
 .text-primary {
   color: var(--primary-color) !important;
+}
+
+.text-secondary {
+  color: var(--dark-green) !important;
+}
+
+.text-dark-orange {
+  color: var(--dark-orange) !important;
 }
 
 .text-black {
@@ -977,4 +986,96 @@ textarea {
   width: 100%;
   height: 380px;
   object-fit: cover;
+}
+
+/* VIDEO PROMOTION */
+.video-wrapper {
+   position: relative;
+   aspect-ratio: 9/16;
+   max-width: 350px;
+   width: 100%;
+   margin: 0 auto;
+   border-radius: 20px;
+   overflow: hidden;
+   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+   background: #000;
+   transition: all 0.3s ease;
+}
+
+.video-wrapper:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.promo-video {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 20px;
+}
+
+/* Feature Items */
+.feature-item h6 {
+   font-size: 16px;
+   color: var(--black-color);
+}
+
+.feature-item small {
+   font-size: 13px;
+   line-height: 1.4;
+}
+
+/* Camp Inclusions */
+.camp-inclusions {
+   border: 2px solid var(--primary-color);
+}
+
+.camp-inclusions h5 {
+   font-weight: 600;
+}
+
+.camp-inclusions ul li {
+   font-size: 14px;
+   line-height: 1.4;
+}
+
+/* Content Wrapper */
+.content-wrapper h3 {
+   color: var(--black-color);
+   font-family: var(--heading-font);
+}
+
+/* Responsive Design mit Bootstrap 5 */
+@media (max-width: 991.98px) {
+   .video-wrapper {
+      max-width: 320px;
+   }
+}
+
+@media (max-width: 767.98px) {
+   .video-wrapper {
+      max-width: 300px;
+   }
+   
+   #video-promotion .text-center {
+      margin-bottom: 3rem !important;
+   }
+   
+   .feature-item {
+      margin-bottom: 1.5rem;
+   }
+}
+
+@media (max-width: 575.98px) {
+   .video-wrapper {
+      max-width: 280px;
+   }
+   
+   .feature-item small {
+      font-size: 12px;
+   }
+   
+   .camp-inclusions {
+      padding: 1.5rem !important;
+   }
 }
