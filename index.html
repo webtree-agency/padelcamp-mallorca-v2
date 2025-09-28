@@ -350,7 +350,7 @@
                               <span class="fw-bold">720,- CHF</span>
                            </li>
                         </ul>
-                        <a href="https://www.eversports.ch/org/activity/fd4e8f81-8309-403a-8f1f-2d6d6026ea52" target="_blank" class="button-48 w-100">Jetzt buchen</a>
+<a href="#" class="button-48 w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Jetzt buchen</a>
                      </div>
                   </div>
                </div>
@@ -371,7 +371,7 @@
                               <span class="fw-bold">720,- CHF</span>
                            </li>
                         </ul>
-                        <a href="https://www.eversports.ch/org/activity/fd4e8f81-8309-403a-8f1f-2d6d6026ea52" target="_blank" class="button-48 w-100">Jetzt buchen</a>
+<a href="#" class="button-48 w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Jetzt buchen</a>
                      </div>
                   </div>
                </div>
@@ -392,7 +392,7 @@
                               <span class="fw-bold">720,- CHF</span>
                            </li>
                         </ul>
-                        <a href="https://www.eversports.ch/org/activity/fd4e8f81-8309-403a-8f1f-2d6d6026ea52" target="_blank" class="button-48 w-100">Jetzt buchen</a>
+<a href="#" class="button-48 w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Jetzt buchen</a>
                      </div>
                   </div>
                </div>
@@ -515,7 +515,7 @@
                         <span><strong>Starke Community</strong> - gemeinsamer Austausch & neue Kontakte</span>
                      </li>
                   </ul>
-                  <a class="button-48 mt-3" role="button" href="https://www.eversports.ch/org/activity/fd4e8f81-8309-403a-8f1f-2d6d6026ea52" target="_blank"><span class="text">Camp buchen</span></a>
+<a href="#" class="button-48 w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Jetzt buchen</a>
                </div>
             </div>
          </div>
@@ -530,7 +530,7 @@
                      Wir freuen uns auf dich in einem unserer Padel-Camps auf Mallorca.
                   </p>
                </div>
-               <a class="button-48" role="button" href="https://www.eversports.ch/org/activity/fd4e8f81-8309-403a-8f1f-2d6d6026ea52" target="_blank"><span class="text">Jetzt buchen</span></a>
+<a href="#" class="button-48 w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Jetzt buchen</a>
             </div>
          </div>
       </section>
@@ -740,7 +740,217 @@
             </div>
          </div>
       </section>
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingModalLabel">
+          <i class="fas fa-calendar-check text-primary me-2"></i>
+          Camp buchen
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+      </div>
+      
+      <div class="modal-body">
+        <form id="bookingForm">
+          
+          <!-- Camp Selection -->
+          <div class="mb-4">
+            <h6 class="text-primary border-bottom pb-2 mb-3">Camp auswählen</h6>
+            <div class="row g-3" id="campSelection">
+              
+              <!-- September Camps -->
+              <div class="col-md-6">
+                <div class="camp-option border rounded p-3" data-camp="september-1" data-price-single="950" data-price-double="880">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="selectedCamp" id="camp-sept-1" value="september-1">
+                    <label class="form-check-label" for="camp-sept-1">
+                      <strong>Camp 1: 11.-14.09.2025</strong><br>
+                      <small class="text-muted">Hotel Agua Beach Palmanova 4*</small>
+                    </label>
+                  </div>
+                  <div class="mt-2">
+                    <span class="badge bg-primary">Einzelzimmer: 950 CHF</span>
+                    <span class="badge bg-secondary">Doppelzimmer: 880 CHF</span>
+                  </div>
+                </div>
+              </div>
 
+              <div class="col-md-6">
+                <div class="camp-option border rounded p-3" data-camp="september-2" data-price-single="950" data-price-double="880">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="selectedCamp" id="camp-sept-2" value="september-2">
+                    <label class="form-check-label" for="camp-sept-2">
+                      <strong>Camp 2: 18.-21.09.2025</strong><br>
+                      <small class="text-muted">Hotel Agua Beach Palmanova 4*</small>
+                    </label>
+                  </div>
+                  <div class="mt-2">
+                    <span class="badge bg-primary">Einzelzimmer: 950 CHF</span>
+                    <span class="badge bg-secondary">Doppelzimmer: 880 CHF</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Oktober Camps -->
+              <div class="col-md-4">
+                <div class="camp-option border rounded p-3" data-camp="october-1" data-price-single="790" data-price-double="720">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="selectedCamp" id="camp-oct-1" value="october-1">
+                    <label class="form-check-label" for="camp-oct-1">
+                      <strong>Camp 3: 10.-13.10.2025</strong><br>
+                      <small class="text-muted">Hotel Agua Beach Palmanova 4*</small>
+                    </label>
+                  </div>
+                  <div class="mt-2">
+                    <span class="badge bg-primary">Einzelzimmer: 790 CHF</span>
+                    <span class="badge bg-secondary">Doppelzimmer: 720 CHF</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="camp-option border rounded p-3" data-camp="october-2" data-price-single="790" data-price-double="720">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="selectedCamp" id="camp-oct-2" value="october-2">
+                    <label class="form-check-label" for="camp-oct-2">
+                      <strong>Camp 4: 17.-20.10.2025</strong><br>
+                      <small class="text-muted">Hotel Agua Beach Palmanova 4*</small>
+                    </label>
+                  </div>
+                  <div class="mt-2">
+                    <span class="badge bg-primary">Einzelzimmer: 790 CHF</span>
+                    <span class="badge bg-secondary">Doppelzimmer: 720 CHF</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="camp-option border rounded p-3" data-camp="october-3" data-price-single="790" data-price-double="720">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="selectedCamp" id="camp-oct-3" value="october-3">
+                    <label class="form-check-label" for="camp-oct-3">
+                      <strong>Camp 5: 24.-27.10.2025</strong><br>
+                      <small class="text-muted">Hotel Agua Beach Palmanova 4*</small>
+                    </label>
+                  </div>
+                  <div class="mt-2">
+                    <span class="badge bg-primary">Einzelzimmer: 790 CHF</span>
+                    <span class="badge bg-secondary">Doppelzimmer: 720 CHF</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room Type Selection -->
+          <div class="mb-4" id="roomSelection" style="display: none;">
+            <h6 class="text-primary border-bottom pb-2 mb-3">Zimmerart</h6>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-check border rounded p-3">
+                  <input class="form-check-input" type="radio" name="roomType" id="single-room" value="single">
+                  <label class="form-check-label w-100" for="single-room">
+                    <strong>Einzelzimmer</strong><br>
+                    <span id="singlePrice" class="text-primary fw-bold">CHF</span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-check border rounded p-3">
+                  <input class="form-check-input" type="radio" name="roomType" id="double-room" value="double">
+                  <label class="form-check-label w-100" for="double-room">
+                    <strong>Doppelzimmer</strong><br>
+                    <span id="doublePrice" class="text-primary fw-bold">CHF</span>
+                    <small class="text-muted d-block">pro Person</small>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Customer Information -->
+          <div class="mb-4" id="customerInfo" style="display: none;">
+            <h6 class="text-primary border-bottom pb-2 mb-3">Ihre Daten</h6>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="firstName" class="form-label">Vorname *</label>
+                <input type="text" class="form-control" id="firstName" required>
+              </div>
+              <div class="col-md-6">
+                <label for="lastName" class="form-label">Nachname *</label>
+                <input type="text" class="form-control" id="lastName" required>
+              </div>
+              <div class="col-12">
+                <label for="email" class="form-label">E-Mail Adresse *</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="col-md-6">
+                <label for="phone" class="form-label">Telefon</label>
+                <input type="tel" class="form-control" id="phone">
+              </div>
+              <div class="col-md-6">
+                <label for="country" class="form-label">Land *</label>
+                <select class="form-select" id="country" required>
+                  <option value="">Bitte wählen...</option>
+                  <option value="CH">Schweiz</option>
+                  <option value="DE">Deutschland</option>
+                  <option value="AT">Österreich</option>
+                  <option value="other">Anderes</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-check mt-3">
+              <input class="form-check-input" type="checkbox" id="agbAccept" required>
+              <label class="form-check-label" for="agbAccept">
+                Ich akzeptiere die <a href="datenschutz.html" target="_blank">AGB und Datenschutzbestimmungen</a> *
+              </label>
+            </div>
+          </div>
+
+          <!-- Summary -->
+          <div class="card bg-light" id="bookingSummary" style="display: none;">
+            <div class="card-body">
+              <h6 class="card-title text-primary">Buchungsübersicht</h6>
+              <div id="summaryContent">
+                <!-- Wird dynamisch gefüllt -->
+              </div>
+              <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <strong>Gesamtpreis:</strong>
+                <span id="totalPrice" class="text-primary fs-4 fw-bold">CHF 0</span>
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Abbrechen</button>
+        <button type="button" id="proceedToPayment" class="btn btn-primary" disabled>
+          <i class="fas fa-credit-card me-2"></i>
+          Zur Zahlung
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Loading Modal -->
+<div class="modal fade" id="loadingModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body text-center py-4">
+        <div class="spinner-border text-primary mb-3" role="status">
+          <span class="visually-hidden">Lädt...</span>
+        </div>
+        <p class="mb-0">Zahlung wird vorbereitet...</p>
+      </div>
+    </div>
+  </div>
+</div>
       <section id="footer" class="footer-background">
          <div class="container footer-container mt-3 pt-3">
             <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 my-5 py-5">
@@ -850,6 +1060,7 @@
              });
          });
       </script>
+      <script src="js/booking.js"></script>
       <script src="js/jquery-1.11.0.min.js"></script>
       <script type="text/javascript" src="js/bootstrap.bundle.min.js" defer></script>
       <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/lineWobble.js"></script>
