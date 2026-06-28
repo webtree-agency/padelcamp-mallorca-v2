@@ -81,6 +81,14 @@
             display: block;
             width: 100%;
             border: 0;
+            /* Hoch genug fuer die laengste Formularseite -> nie interner Scroll */
+            height: 1750px;
+         }
+         /* Auf dem Handy bricht das Formular staerker um und wird hoeher */
+         @media (max-width: 767px) {
+            .anmeldung-form-wrapper iframe {
+               height: 2350px;
+            }
          }
       </style>
    </head>
@@ -226,7 +234,7 @@
             <iframe
                src="https://docs.google.com/forms/d/e/1FAIpQLSfmL5m0lbU0Z-NZZk0heusEY5Yp38RgpcIITSs59wvDaPkJgw/viewform?embedded=true"
                width="100%"
-               height="1000"
+               height="1750"
                frameborder="0"
                marginheight="0"
                marginwidth="0"
