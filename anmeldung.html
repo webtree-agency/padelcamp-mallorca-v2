@@ -239,10 +239,11 @@
             <p class="col-md-8 offset-md-2">Fülle das untenstehende Formular aus und sichere dir deinen Platz im Padelcamp Mallorca. Wir melden uns nach Eingang deiner Anmeldung persönlich bei dir.</p>
          </div>
 
-         <!-- Apps-Script-Anmeldung Frühling 2027 -->
+         <!-- Anmeldung Frühling 2027 (wmpadel.ch, sendet Höhe/Scroll/Anmeldung per postMessage) -->
          <div class="anmeldung-form-wrapper mx-auto">
             <iframe
-               src="https://script.google.com/macros/s/AKfycbwZj2ldJ8bwXSfMt8FHTcQBj6mWz5RPYw8pus-Gh0PMLZMc7BrDXHiZUymCH3H9pSiP/exec"
+               id="anmeldung-iframe"
+               src="https://wmpadel.ch/padelcamp/"
                width="100%"
                height="4750"
                frameborder="0"
@@ -513,5 +514,28 @@
       <script type="text/javascript" src="js/plugins.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
       <script type="text/javascript" src="js/script.js"></script>
+      <script>
+         /* Anmeldeformular wmpadel.ch: ?camp=3 an das Formular durchreichen und auf seine Meldungen hören
+            padelcamp:hoehe → iframe-Höhe · padelcamp:scroll → zur Fehlermeldung scrollen · padelcamp:angemeldet → gtag-Ereignis */
+         (function () {
+            var frame = document.getElementById('anmeldung-iframe');
+            if (!frame) return;
+            var camp = new URLSearchParams(location.search).get('camp');
+            if (camp && /^\d+$/.test(camp)) frame.src = 'https://wmpadel.ch/padelcamp/?camp=' + camp;
+            window.addEventListener('message', function (e) {
+               if (e.origin !== 'https://wmpadel.ch' || !e.data || typeof e.data !== 'object') return;
+               var d = e.data;
+               if (d.type === 'padelcamp:hoehe' && d.h > 0) {
+                  frame.style.height = Math.ceil(d.h) + 'px';
+               } else if (d.type === 'padelcamp:scroll' && typeof d.y === 'number') {
+                  var kopf = document.querySelector('header');
+                  var abzug = kopf ? kopf.getBoundingClientRect().height : 100;
+                  window.scrollTo({ top: frame.getBoundingClientRect().top + window.scrollY + d.y - abzug, behavior: 'smooth' });
+               } else if (d.type === 'padelcamp:angemeldet' && typeof gtag === 'function') {
+                  gtag('event', 'padelcamp_anmeldung', { transaction_id: d.id, value: d.betrag, currency: d.waehrung || 'CHF' });
+               }
+            });
+         })();
+      </script>
    </body>
 </html>
