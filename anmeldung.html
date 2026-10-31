@@ -19,10 +19,10 @@
       <meta name="author" content="Padelcamp Mallorca">
       <link rel="canonical" href="https://padelcamp-mallorca.ch/anmeldung.html">
       <!-- Open Graph Meta Tags for Social Media -->
-      <meta property="og:title" content="Padelcamp Mallorca | Anmeldung">
+      <meta property="og:title" content="Padelcamp Mallorca | Anmeldung Frühling 2027">
       <meta property="og:description" content="Melde dich jetzt für das Padelcamp Mallorca an und sichere dir deinen Platz – professionelles Padel-Training, 4*-Hotel und Sonne auf Mallorca.">
-      <meta property="og:image" content="https://padelcamp-mallorca.ch/images/gallery/spring-26/spring-26-12.webp">
-      <meta property="og:image:alt" content="Padel-Schläger und Tasche am Strand auf Mallorca">
+      <meta property="og:image" content="https://padelcamp-mallorca.ch/images/gallery/gruppe-herbst-26.webp">
+      <meta property="og:image:alt" content="Gruppenfoto der Teilnehmenden im Padelcamp Mallorca">
       <meta property="og:url" content="https://padelcamp-mallorca.ch/anmeldung.html">
       <meta property="og:type" content="website">
       <meta property="og:locale" content="de_CH">
@@ -31,7 +31,7 @@
       <meta name="twitter:card" content="summary_large_image">
       <meta name="twitter:title" content="Padelcamp Mallorca | Anmeldung">
       <meta name="twitter:description" content="Melde dich jetzt für das Padelcamp Mallorca an und sichere dir deinen Platz.">
-      <meta name="twitter:image" content="https://padelcamp-mallorca.ch/images/gallery/spring-26/spring-26-12.webp">
+      <meta name="twitter:image" content="https://padelcamp-mallorca.ch/images/gallery/gruppe-herbst-26.webp">
       <meta name="theme-color" content="#0a2540">
       <link rel="apple-touch-icon" sizes="180x180" href="images/logo/logo-googlesearch.png">
       <link rel="icon" href="images/logo/favicon.svg" type="image/svg+xml">
@@ -60,9 +60,9 @@
             position: relative;
             min-height: 46vh;
             padding-top: 120px;
-            background-image: url('images/gallery/spring-26/spring-26-12.webp');
+            background-image: url('images/gallery/gruppe-herbst-26.webp');
             background-size: cover;
-            background-position: center 45%;
+            background-position: center 55%;
             background-repeat: no-repeat;
          }
          .anmeldung-hero .anmeldung-hero-overlay {
@@ -90,6 +90,15 @@
                height: 2350px;
             }
          }
+         /* Das Apps-Script-Formular 2027 ist viel laenger als das alte Google Form und
+            waechst auf schmalen Bildschirmen stark (gemessen: 4593px bei 640px Breite,
+            5975px bei 430px, 6502px bei 390px, 6745px bei 360px, 7309px bei 320px) */
+         .anmeldung-form-wrapper iframe { height: 4750px; }
+         @media (max-width: 767px) { .anmeldung-form-wrapper iframe { height: 5000px; } }
+         @media (max-width: 575px) { .anmeldung-form-wrapper iframe { height: 6150px; } }
+         @media (max-width: 419px) { .anmeldung-form-wrapper iframe { height: 6800px; } }
+         @media (max-width: 374px) { .anmeldung-form-wrapper iframe { height: 7200px; } }
+         @media (max-width: 339px) { .anmeldung-form-wrapper iframe { height: 7500px; } }
       </style>
    </head>
    <body>
@@ -216,22 +225,29 @@
             <div class="col-md-10 offset-md-1">
                <h6 class="text-white text-uppercase mb-3">Sei dabei</h6>
                <h1 class="display-1 fw-bold text-white"><span class="orange-dot">Anmeldung</span></h1>
-               <p class="fw-light text-white text-uppercase h4 mb-0">Nächste Anmeldung ab Ende Oktober</p>
+               <p class="fw-light text-white text-uppercase h4 mb-0">Frühlingscamps 2027 – sichere dir deinen Platz</p>
             </div>
          </div>
       </section>
 
-      <!-- Anmeldung geschlossen (Camps 2026 vorbei, 2027 öffnet Ende Oktober) -->
+      <!-- Anmeldeformular -->
       <section class="padding-small" id="anmeldung">
-         <div class="container text-center">
-            <h6 class="text-dark-orange">Anmeldung</h6>
-            <h2 class="display-5 fw-bold">Anmeldung <span class="orange-dot">geschlossen</span></h2>
-            <div class="col-md-8 offset-md-2">
-               <p>Die Padelcamps 2026 sind vorbei – vielen Dank an alle, die dabei waren! Eine Anmeldung ist im Moment nicht mehr möglich.</p>
-               <p class="fw-bold text-dark-orange">Die Anmeldung für die Frühlingscamps 2027 öffnet Ende Oktober.</p>
-               <p>Bei Fragen erreichst du uns via <a href="https://wa.me/41764565216" target="_blank" rel="noopener" style="text-decoration: underline;">WhatsApp</a> oder <a href="mailto:info@padelcamp-mallorca.ch" style="text-decoration: underline;">info@padelcamp-mallorca.ch</a>.</p>
-               <a class="button-48 mt-3" role="button" href="/#camps" style="background-color: var(--dark-orange);"><span class="text">Camps 2027 ansehen</span></a>
-            </div>
+         <div class="container text-center mb-4">
+            <h6 class="text-dark-orange">Anmeldeformular</h6>
+            <h2 class="display-5 fw-bold">Jetzt <span class="orange-dot">anmelden</span></h2>
+            <p class="col-md-8 offset-md-2">Fülle das untenstehende Formular aus und sichere dir deinen Platz im Padelcamp Mallorca. Wir melden uns nach Eingang deiner Anmeldung persönlich bei dir.</p>
+         </div>
+
+         <!-- Apps-Script-Anmeldung Frühling 2027 -->
+         <div class="anmeldung-form-wrapper mx-auto">
+            <iframe
+               src="https://script.google.com/macros/s/AKfycbwZj2ldJ8bwXSfMt8FHTcQBj6mWz5RPYw8pus-Gh0PMLZMc7BrDXHiZUymCH3H9pSiP/exec"
+               width="100%"
+               height="4750"
+               frameborder="0"
+               marginheight="0"
+               marginwidth="0"
+               title="Anmeldeformular Padelcamp Mallorca Frühling 2027">Wird geladen…</iframe>
          </div>
       </section>
 
