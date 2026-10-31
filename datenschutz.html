@@ -2,8 +2,6 @@
 <html lang="de">
    <head>
             <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17246904153">
-      </script>
       <script>
          window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);}
@@ -11,6 +9,8 @@
          gtag('config', 'AW-17246904153');
          gtag('config', 'G-5WREQHFSFM');
       </script>
+      <!-- gtag.js lädt erst nach Zustimmung im Cookie-Banner -->
+      <script src="js/consent.js" defer></script>
       <title>Padelcamp Mallorca | Datenschutz | Padelcamp-mallorca.ch</title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -168,6 +168,9 @@
       <h4 class="fw-bold">Wie wir Ihre Informationen verwenden</h4>
       <p>Wir verwenden Ihre Informationen, um unsere Dienstleistungen bereitzustellen und zu verbessern, Transaktionen zu verarbeiten, mit Ihnen zu kommunizieren und für weitere Zwecke im Bereich Kundendienst.</p>
 
+      <h4 class="fw-bold">Cookies und Analyse</h4>
+      <p>Mit Ihrer Einwilligung über den Cookie-Banner nutzen wir Google Analytics und Google Ads (Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Irland). Damit sehen wir, wie unsere Website genutzt wird und welche Anzeigen zu Anmeldungen führen. Dabei werden Cookies gesetzt und Nutzungsdaten wie gekürzte IP-Adresse, besuchte Seiten und Gerätetyp an Google übermittelt, auch in die USA. Ohne Einwilligung findet keine Auswertung statt. Ihre Wahl können Sie jederzeit über «Cookie-Einstellungen» in der Fusszeile ändern.</p>
+
       <h4 class="fw-bold">Weitergabe Ihrer Informationen</h4>
       <p>Wir geben Ihre personenbezogenen Daten nicht an Dritte weiter, ausser wenn dies zur Erbringung unserer Dienstleistungen, zur Einhaltung gesetzlicher Vorschriften oder zum Schutz unserer Rechte erforderlich ist.</p>
 
@@ -248,6 +251,7 @@
                   <div class="mb-2 mb-md-0 text-start">
                     <a href="agb.html" class="text-decoration-underline me-2">AGB</a>
                     <a href="datenschutz.html" class="text-decoration-underline me-2">Datenschutz</a>
+                    <a href="#" data-cookie-einstellungen class="text-decoration-underline me-2">Cookie-Einstellungen</a>
                     <a href="impressum.html" class="text-decoration-underline">Impressum</a>
                   </div>
                   <p class="mb-0 text-start text-md-center"><span id="current-year"></span> @ WM Padel GmbH</p>

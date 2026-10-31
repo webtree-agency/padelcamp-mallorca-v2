@@ -2,8 +2,6 @@
 <html lang="de">
    <head>
       <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17246904153">
-      </script>
       <script>
          window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);}
@@ -11,6 +9,8 @@
          gtag('config', 'AW-17246904153');
          gtag('config', 'G-5WREQHFSFM');
       </script>
+      <!-- gtag.js lädt erst nach Zustimmung im Cookie-Banner -->
+      <script src="js/consent.js" defer></script>
       <title>Padelcamp Mallorca | #1 Padelcamps in DACH | Padelcamp-mallorca.ch</title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1096,6 +1096,7 @@
                   <div class="mb-2 mb-md-0 text-start">
                     <a href="agb.html" class="text-decoration-underline me-2">AGB</a>
                     <a href="datenschutz.html" class="text-decoration-underline me-2">Datenschutz</a>
+                    <a href="#" data-cookie-einstellungen class="text-decoration-underline me-2">Cookie-Einstellungen</a>
                     <a href="impressum.html" class="text-decoration-underline">Impressum</a>
                   </div>
                   <p class="mb-0 text-start text-md-center"><span id="current-year"></span> @ WM Padel GmbH</p>
@@ -1107,48 +1108,6 @@
          </div>
       </section>
       
-      <!-- Cookie Consent Banner -->
-      <div id="cookie-consent-banner" class="cookie-banner">
-         <div class="cookie-content">
-             <div class="cookie-text">
-               <h5>Cookie-Richtlinie</h5>
-               <p>Wir verwenden Cookies, um dein Surferlebnis zu verbessern, den Website-Verkehr zu analysieren und Inhalte zu personalisieren. Durch Klicken auf „Alle akzeptieren“ stimmst du der Verwendung von Cookies zu. Du kannst auf „Ablehnen“ klicken, um nicht notwendige Cookies abzulehnen.</p>
-            </div>
-             <div class="cookie-buttons">
-                 <button id="cookie-accept" class="button-48">Akzeptieren</button>
-                 <button id="cookie-decline" class="button-48-transparent">Ablehnen</button>
-             </div>
-         </div>
-      </div>
-      <script>
-         document.addEventListener('DOMContentLoaded', function() {
-             const cookieBanner = document.getElementById('cookie-consent-banner');
-             const acceptButton = document.getElementById('cookie-accept');
-             const declineButton = document.getElementById('cookie-decline');
-             
-             // Check if user has already made a choice
-             if (!localStorage.getItem('cookieConsent')) {
-                 // Show the banner after a short delay
-                 setTimeout(() => {
-                     cookieBanner.classList.add('show');
-                 }, 1000);
-             }
-             
-             // Accept cookies
-             acceptButton.addEventListener('click', function() {
-                 localStorage.setItem('cookieConsent', 'accepted');
-                 cookieBanner.classList.remove('show');
-                 // Here you could initialize analytics scripts or other cookie-dependent code
-             });
-             
-             // Decline cookies
-             declineButton.addEventListener('click', function() {
-                 localStorage.setItem('cookieConsent', 'declined');
-                 cookieBanner.classList.remove('show');
-                 // Here you could ensure no tracking cookies are set
-             });
-         });
-      </script>
       <script src="js/jquery-1.11.0.min.js"></script>
       <script type="text/javascript" src="js/bootstrap.bundle.min.js" defer></script>
       <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/lineWobble.js"></script>

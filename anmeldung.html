@@ -2,8 +2,6 @@
 <html lang="de">
    <head>
             <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17246904153">
-      </script>
       <script>
          window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);}
@@ -11,6 +9,8 @@
          gtag('config', 'AW-17246904153');
          gtag('config', 'G-5WREQHFSFM');
       </script>
+      <!-- gtag.js lädt erst nach Zustimmung im Cookie-Banner -->
+      <script src="js/consent.js" defer></script>
       <title>Padelcamp Mallorca | Anmeldung | Padelcamp-mallorca.ch</title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -497,6 +497,7 @@
                   <div class="mb-2 mb-md-0 text-start">
                     <a href="agb.html" class="text-decoration-underline me-2">AGB</a>
                     <a href="datenschutz.html" class="text-decoration-underline me-2">Datenschutz</a>
+                    <a href="#" data-cookie-einstellungen class="text-decoration-underline me-2">Cookie-Einstellungen</a>
                     <a href="impressum.html" class="text-decoration-underline">Impressum</a>
                   </div>
                   <p class="mb-0 text-start text-md-center"><span id="current-year"></span> @ WM Padel GmbH</p>
